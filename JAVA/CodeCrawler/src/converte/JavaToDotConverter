@@ -1,0 +1,22 @@
+package converte;
+
+import org.umlgraph.test.RunOne;
+
+public class JavaToDotConverter {
+	public String className, path;
+
+	public void setSourcePath(String FullPath) {
+//		String javaFile= "\"" + FullPath + "\"";
+//		System.out.println(javaFile);
+		int index = FullPath.lastIndexOf("\\");
+		path = FullPath.substring(0, index + 1);//obtain the path of input java file
+		System.out.println("Inside set source path:"+path); 
+		int index1 = FullPath.lastIndexOf(".");
+		className = "Intr";//obtain the name of input java file	
+	}
+
+	public void DotCreator() {
+		//calls public static void runSingleClass(String className, String sourcePath) method of org.umlgraph.test.RunOne class
+		RunOne.runSingleClass(className, path);
+	}
+}
