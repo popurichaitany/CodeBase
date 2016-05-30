@@ -1,0 +1,237 @@
+
+package Home;
+import java.io.*;
+import java.util.Map;
+import java.util.Set;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
+import file_prop.excel_create;
+import gui.*;
+import control_flow.*;
+
+public class XML_Formation extends JFrame
+
+{
+	
+	Directory_Reader dr;
+	Collection_Formation obj1= new Collection_Formation();
+	excel_create ec;
+	String resData[] = new String[16];
+	public static String opDir,op;
+	File aFile;
+	public int proceed;//flag variable for detecting folder contains java file(s) or not
+	Set<Map.Entry <File, String>> set=obj1.hm.entrySet();
+	
+	
+	
+	
+	public XML_Formation(String idir,String odir) {
+		super();
+		
+		new Invoke_tracer("refresh");
+		new Extractor("refresh");
+		dr=new Directory_Reader(idir);
+		//java_project is flag variable in Directory_Reader module for java project detection
+		 proceed=Directory_Reader.java_project;
+		 ec=new excel_create();
+		 
+		
+		 
+		
+		 
+		
+		if(proceed==1)
+		{
+			
+			dr.DrcReader(1); 
+			dr.DrcReader(2);
+			System.out.println("Miscelleneous:");  
+			for(int i=0;i<1024;i++)
+			{
+			 for(int j=0;j<32;j++)
+			 {
+			  for(int k=0;k<16;k++)
+			  {
+				  if(Invoke_tracer.callee[i][j][k]!="")
+				  {
+					   System.out.print("Source class:"+Extractor.cname[i]+" ");
+					   System.out.print("Source method:"+Extractor.mname[i][j][0]+" ");
+					   System.out.println(Invoke_tracer.callee[i][j][k]);  
+				  }
+			            		 
+			  }
+			 }
+			}
+			 
+			opDir=odir;
+			op=odir;
+			aFile= new File(idir);
+			obj1.process(aFile);
+			XML_Former();
+		}
+		if(proceed==0)
+		{
+			JOptionPane.showMessageDialog(this, "Please select path/folder containing java files only");
+		    	
+		
+		}
+	}
+
+	public void XML_Former()
+	{
+		
+		FileWriter fw=null; 
+		PrintWriter pw=null;
+	    		
+		try
+		{
+			opDir+="\\CodeCrawler_Reports.xml";
+			fw = new FileWriter(opDir);
+			pw=new PrintWriter(fw);
+			pw.println("<Control_Flow>");
+			
+			
+		for(Map.Entry<File, String> me : set)
+		{
+			
+			
+			String type="",p;
+			File temp=me.getKey();
+			String id=me.getValue();
+			
+			String name=temp.getName();
+			p=temp.getParent();
+			String pid=obj1.hm.get(new File(p)); 
+			 
+			if(temp.isDirectory())
+			{
+			  type="Folder";	
+			  pw.println("<Entity>");
+				pw.println("<Name>"+name+"</Name>");
+				pw.println("<FType>"+type+"</FType>");
+				pw.println("<ID>"+id+"</ID>");
+				pw.println("<Parent>"+pid+"</Parent>"); 
+				pw.println("<Type>"+" "+"</Type>");
+			    pw.println("<Path>"+temp.getParent()+"</Path>");
+			    pw.println("<Classes>"+" "+"</Classes>");
+			    pw.println("<LOC>"+" "+"</LOC>");
+			    pw.println("<Comments>"+" "+"</Comments>");
+			    pw.println("<Methods>"+" "+"</Methods>");
+			    pw.println("<CreationDate>"+" "+"</CreationDate>");
+			    pw.println("<LastModifiedDate>"+" "+"</LastModifiedDate>");
+			    pw.println("<Ageing>"+" "+"</Ageing>");
+	            pw.println("</Entity>");
+			}
+			if(temp.isFile() && temp.getName().endsWith(".java")) 
+			{
+				type="File";
+				pw.println("<Entity>");
+				pw.println("<Name>"+name+"</Name>");
+				pw.println("<FType>"+type+"</FType>");
+				pw.println("<ID>"+id+"</ID>");
+				pw.println("<Parent>"+pid+"</Parent>"); 
+				
+			      resData[1] = ec.file_extension(temp.getName());
+			      resData[2] = temp.getParent();
+			      resData[3] = ec.count_classes(temp.getAbsolutePath());
+			      resData[4] = ec.count_LOC(temp.getAbsolutePath());
+			      resData[5] = ec.count_comment_lines(temp.getAbsolutePath());
+			      resData[6] =ec.count_methods(temp.getAbsolutePath());
+			      resData[7] = ec.file_created(temp.getAbsolutePath());
+			      resData[8] = ec.file_last_modified(temp.getAbsolutePath());
+			      resData[9] = ec.Ageing(aFile.getAbsolutePath());
+			    
+			      
+                  
+			      
+			      pw.println("<Type>"+resData[1]+"</Type>");
+			      pw.println("<Path>"+resData[2]+"</Path>");
+			      pw.println("<Classes>"+resData[3]+"</Classes>");
+			      pw.println("<LOC>"+resData[4]+"</LOC>");
+			      pw.println("<Comments>"+resData[5]+"</Comments>");
+			      pw.println("<Methods>"+resData[6]+"</Methods>");
+			      pw.println("<CreationDate>"+resData[7]+"</CreationDate>");
+			      pw.println("<LastModifiedDate>"+resData[8]+"</LastModifiedDate>");
+			      pw.println("<Ageing>"+resData[9]+"</Ageing>");
+			   
+			     
+			      
+                  fileBackup f=new fileBackup(temp);
+                    
+                  
+                  
+                  
+                  int c=f.classcnt;
+                
+                  
+                  int intr;
+                  for(int q=0;q<=c;q++) 
+                  {
+                	  String cnm=f.cname[q];
+                	  pw.println("<CLASS>");
+                	  pw.println("<NAME>"+cnm+"</NAME>"); 
+               		 pw.println("<EXTEND>"+f.ecname[q][0]+"</EXTEND>"); 
+                	  
+                	  intr=f.max_andx;
+                	  
+                	  for(int e=0;e<32;e++)
+                	  {
+                		  if(f.atr[q][e]!=null)
+                		  pw.println("<ATTRIBUTE>"+f.atr[q][e]+"</ATTRIBUTE>");
+                	  }
+                	  intr=f.max_mndx;
+                	  
+                	  for(int r=0;r<32;r++)
+                	  {
+                		  if(f.mname[q][r]!=null)
+                		  {
+                			  String mnm=f.mname[q][r];
+                			  
+                		   pw.println("<METHOD>");
+                   		   pw.println("<NAME>"+f.mname[q][r]+"</NAME>");
+                   		for(int x=0;x<1024;x++)
+                   		{
+                   			if(Extractor.cname[x].equals(cnm))
+                   			{
+                   			  for(int z=0;z<32;z++)
+                   				{
+                   				  String h=f.mname[q][r].substring(0,f.mname[q][r].indexOf(")"));
+                   			
+                                   if(Extractor.mname[x][z][1].contains(h))
+                                   {
+                                	   for(int y=0;y<16;y++)
+                                	   {
+                                		  
+                                		   if(!Invoke_tracer.callee[x][z][y].equals("")) 
+                                		   {
+                                  			   pw.println("<Calls>"+Invoke_tracer.callee[x][z][y]+"</Calls>");
+                                		   }
+                                	   }
+                                   }
+                   				}
+                   			}
+                   		}
+                		   pw.println("</METHOD>");
+                		  }
+                	  }
+                	  pw.println("</CLASS>");
+                  }
+	            pw.println("</Entity>");
+			}
+			
+			
+		}
+		}catch(IOException ioe)
+		{
+			
+		}
+		pw.println("</Control_Flow>");
+		pw.close();
+	}
+	
+	
+	
+	
+	
+}
