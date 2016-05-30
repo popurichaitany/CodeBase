@@ -1,0 +1,39 @@
+package Home;
+
+import java.io.File;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+
+public class Collection_Formation 
+{
+	
+	int id=0;
+	static TreeMap<File,String> hm = new TreeMap<File,String>();//repository for all files/folders encountered
+	
+	
+	void process(File aFile)
+	{
+		if(aFile.isFile() && aFile.getName().endsWith(".java"))
+		{
+			hm.put(aFile, "File"+id++);
+		}
+		else if(aFile.isDirectory())
+		{
+			File listOfFiles []=aFile.listFiles();
+			hm.put(aFile, "Dir"+id++);
+			for(int i=0;i<listOfFiles.length;i++)
+			{
+				process(listOfFiles[i]); //passing each subfolder and file child for traversing till dead point 
+			}
+		}
+	
+		
+	}
+	
+	
+
+}
+
+
