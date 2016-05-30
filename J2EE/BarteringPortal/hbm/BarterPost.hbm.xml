@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="beans.BarterPostPojo" table="barter_post">
+      <meta attribute="class-description">
+         This class contains information about barter request. 
+      </meta>
+      <id name="reqId" type="int" column="reqId">
+         <generator class="native"/>
+      </id>
+      <property name="title" column="title" type="string"/>
+      <property name="offeringCatId" column="offering_cat_id" type="int"/>
+      <property name="itemOfferedDesc" column="item_offered" type="string"/>
+      <property name="expectedCatId" column="expected_cat_id" type="int"/>
+      <property name="expectedItemDesc" column="expected_item" type="string"/>
+      <property name="itemImage" column="item_picture" type="string"/>
+      <property name="tradeContact" column="trade_contact" type="string"/>
+      <property name="userId" column="user_id" type="int"/>
+      <property name="uploadedimg" column="uploadedimg" type="binary"/>
+   </class>
+</hibernate-mapping>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="beans.UserPojo" table="user">
+      <meta attribute="class-description">
+         This class contains the user information. 
+      </meta>
+      <id name="userId" type="int" column="user_id">
+         <generator class="native"/>
+      </id>
+      <property name="firstName" column="first_name" type="string"/>
+      <property name="lastName" column="last_name" type="string"/>
+      <property name="dob" column="dob" type="date"/>
+      <property name="phone" column="phone" type="string"/>
+      <property name="emailId" column="email_id" type="string"/>
+      <property name="address1" column="address1" type="string"/>
+      <property name="address2" column="address2" type="string"/>
+      <property name="city" column="city" type="string"/>
+      <property name="state" column="state" type="string"/>
+      <property name="zipcode" column="zipcode" type="int"/>
+      <property name="userRating" column="user_rating" type="int"/>
+   </class>
+</hibernate-mapping>

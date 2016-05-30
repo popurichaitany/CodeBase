@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="beans.AccountPojo" table="account">
+      <meta attribute="class-description">
+         This class contains the account information. 
+      </meta>
+      <id name="id" type="int" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="userId" column="user_id" type="int"/>
+      <property name="emailId" column="email_id" type="string"/>
+      <property name="password" column="password" type="string"/>
+      <property name="loginAttempt" column="login_attempt" type="int"/>
+      <property name="accountBlocked" column="account_blocked" type="string"/>
+      <property name="unblockTime" column="unblock_time" type="timestamp"/>
+   </class>
+</hibernate-mapping>
