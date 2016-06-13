@@ -7,7 +7,7 @@ package Model;
 
 /**
  *
- * @author prath
+ * @author anand
  */
 public class userobject {
             private String user_id;
