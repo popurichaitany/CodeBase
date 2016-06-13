@@ -7,7 +7,7 @@ package Model;
 
 /**
  *
- * @author prath
+ * @author anand
  */
 public class BusinessCategory {
     private String BusinessCategory;
