@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author prath
+ * @author anand
  */
 public class Reviews extends javax.swing.JFrame {
 
