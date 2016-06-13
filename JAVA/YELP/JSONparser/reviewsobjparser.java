@@ -4,12 +4,9 @@
  * and open the template in the editor.
  */
 package JSONparser;
-//import static JSONparser.BusinessObjparser.FileName;
-//import Model.BusinessObject;
+
 import DbManip.JDBCconn;
 import Model.reviewobject;
-//import org.json.simple.JSONObject; 
-//import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -18,7 +15,6 @@ import java.io.FileNotFoundException;
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.Scanner;
-//import java.sql.*;
 import java.util.List;
 /**
  *
@@ -26,18 +22,12 @@ import java.util.List;
  */
 public class reviewsobjparser {
    
-    static String FileName="C:\\Users\\prath\\Downloads\\PRATHAMESH_HW2\\PRATHAMESH_HW2\\YelpDataset\\YelpDataset-CptS451\\yelp_review.json";
-   /* public static void main(String x[]){
+    static String FileName="C:\\Users\\anand\\YelpDataset\\YelpDataset-CptS451\\yelp_review.json";
    
-    try {
-        List<reviewobject> jsons=ReadJSON(new File(FileName),"UTF-8");
-    } catch (FileNotFoundException | ParseException e) {
-    }
-}*/
     public static synchronized List<reviewobject> ReadJSON(String Encoding) throws FileNotFoundException, ParseException {
     Scanner scn=new Scanner(new File(FileName) ,Encoding);
     ArrayList<JSONObject> json=new ArrayList<>();
-//Reading and Parsing Strings to Json
+
     int iterate = 0;
     List<reviewobject> RObjList = new ArrayList<>();
     iterate = 0;
@@ -45,21 +35,6 @@ public class reviewsobjparser {
     jdbcIns.connect();
     while(scn.hasNext()){
         JSONObject obj2= (JSONObject) new JSONParser().parse(scn.nextLine());
-        //json.add(obj2);
-    
-
-    
-    //  static String FileName="C:\\Users\\prath\\Downloads\\PRATHAMESH_HW2\\PRATHAMESH_HW2\\YelpDataset\\YelpDataset-CptS451\\yelp_review.json";
-  /*    
-      public static synchronized List<reviewobject> ReadJSON(String Encoding) throws FileNotFoundException, ParseException
-      {
-    Scanner scn=new Scanner(new File(FileName),Encoding);
-    ArrayList<JSONObject> json=new ArrayList<>();
-//Reading and Parsing Strings to Json
-    while(scn.hasNext()){
-        JSONObject obj= (JSONObject) new JSONParser().parse(scn.nextLine());
-        json.add(obj);
-    }*/
 //Here Printing Json Objects
     
    // for(JSONObject obj : json){
@@ -76,20 +51,16 @@ public class reviewsobjparser {
             } else
                 useful = 0;
             temp.setUsefulVotes(useful);       
-            //System.out.println("Useful votes:"+useful); 
         }
         if(obj2.containsKey("business_id")) {
              String bid = (String) obj2.get("business_id");
              temp.setbusiness_id(bid); 
-             //String bid = jo.toJSONString();
-             //System.out.println("Businees ID:"+bid);
         }
             
         if(obj2.containsKey("user_id"))
         {
             String uid = obj2.get("user_id").toString();
             temp.setUser_id(uid); 
-            //System.out.println("UserID:"+obj.get("user_id"));
         }
                 if(obj2.containsKey("review_id"))
         {
@@ -110,7 +81,6 @@ public class reviewsobjparser {
         {
             String txt = obj2.get("text").toString();
             temp.setText(txt);
-            //System.out.println("Text:"+obj.get("text"));
         }
         if(obj2.containsKey("type")){
             String rType = obj2.get("type").toString();
@@ -125,11 +95,6 @@ public class reviewsobjparser {
             //System.out.println("Stars:"+star);//obj.get("stars")
         }
         
-        /*iterate++;
-        if(iterate % 100 == 0){
-            jdbcIns.close();
-            jdbcIns.connect();
-        }*/
         try{
                 String bid = temp.getbusiness_id();
                 String uid = temp.getUser_id();
@@ -164,8 +129,3 @@ public class reviewsobjparser {
     return RObjList;
     }
 }
-    /*public static List<reviewobject> ReadJSON(String utF8) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-}*/
