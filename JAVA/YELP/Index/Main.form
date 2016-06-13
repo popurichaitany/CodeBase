@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="java.awt.Checkbox" name="checkbox22">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="checkbox22"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="99" red="66" type="rgb"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="choice5" alignment="0" min="-2" pref="195" max="-2" attributes="0"/>
+                          <Component id="label1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="choice6" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
+                          <Component id="label2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="choice7" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                          <Component id="label3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="88" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="label4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="choice8" min="-2" pref="197" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane3" pref="549" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="button1" min="-2" pref="78" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                                      <Component id="button3" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Component id="button4" min="-2" pref="71" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" pref="592" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" pref="592" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="771" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="label1" min="-2" max="-2" attributes="0"/>
+                          <Component id="label2" min="-2" max="-2" attributes="0"/>
+                          <Component id="label3" min="-2" max="-2" attributes="0"/>
+                          <Component id="label4" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="choice5" min="-2" max="-2" attributes="0"/>
+                          <Component id="choice6" min="-2" max="-2" attributes="0"/>
+                          <Component id="choice7" min="-2" max="-2" attributes="0"/>
+                          <Component id="choice8" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="button1" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="button3" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="button4" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" pref="159" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" pref="443" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane3" min="-2" pref="862" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="cc" red="ff" type="rgb"/>
+        </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder/>
+          </Border>
+        </Property>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="checkbox2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox4" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox6" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox7" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox8" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox9" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox10" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox11" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox12" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox13" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox14" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox15" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox16" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox17" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox18" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox19" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox20" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox21" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox23" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox24" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox25" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox26" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox27" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox28" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox29" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="checkbox1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="102" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox4" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox6" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox10" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox12" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox13" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox14" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox15" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox16" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox17" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox18" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox19" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox20" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox21" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox23" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox24" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox25" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox26" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox27" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox28" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="checkbox29" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="50" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="java.awt.Checkbox" name="checkbox1">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Active Life"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox1ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox2">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Arts &amp; Entertainment"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox2ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox3">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Automotive"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox3ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox4">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Car Rental"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox4ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox5">
+          <Properties>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Default Cursor"/>
+            </Property>
+            <Property name="label" type="java.lang.String" value="Beauty &amp; Spas"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox5ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox6">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Cafes"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox6ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox7">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Convenience Stores"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox7ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox8">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Dentists"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox8ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox9">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Doctors"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox9ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox10">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Drugstores"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox10ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox11">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Department Stores"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox11ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox12">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Education"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox12ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox13">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Event Planning &amp; Services"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox13ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox14">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Flowers &amp; Gifts"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox14ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox15">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Food"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox15ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox16">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Health &amp; Medical"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox16ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox17">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Home Services"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox17ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox18">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Home &amp; Garden"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox18ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox19">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Hospitals"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox19ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox20">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Hotels &amp; Travels"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox20ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox21">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Hardware Stores"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox21ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox23">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Grocery"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox23ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox24">
+          <Properties>
+            <Property name="label" type="java.lang.String" value=" Medical Centers"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox24ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox25">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Nurseries &amp; Gardening"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox25ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox26">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Nihghtlife"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox26ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox27">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Restaurants"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox27ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox28">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Shopping"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox28ItemStateChanged"/>
+          </Events>
+        </Component>
+        <Component class="java.awt.Checkbox" name="checkbox29">
+          <Properties>
+            <Property name="label" type="java.lang.String" value="Transportation"/>
+          </Properties>
+          <Events>
+            <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="checkbox29ItemStateChanged"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="51">
+                <Column editable="true" title="Business" type="java.lang.String"/>
+                <Column editable="true" title="City" type="java.lang.String"/>
+                <Column editable="true" title="State" type="java.lang.String"/>
+                <Column editable="true" title="Stars" type="java.lang.String"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="1">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title value="Business"/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title value="City"/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title value="State"/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title value="Stars"/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="columnSelectionAllowed" type="boolean" value="true"/>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTable1MouseClicked"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="java.awt.Choice" name="choice5">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+      </Properties>
+      <Events>
+        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="choice5ItemStateChanged"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Choice" name="choice6">
+    </Component>
+    <Component class="java.awt.Choice" name="choice7">
+    </Component>
+    <Component class="java.awt.Choice" name="choice8">
+      <Events>
+        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="choice8ItemStateChanged"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="button3">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="SEARCH"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="button4">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="CLOSE"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button4ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="button1">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="START"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Label" name="label1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Day of the Week"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.Label" name="label2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="From"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.Label" name="label3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="To"/>
+      </Properties>
+    </Component>
+    <Component class="java.awt.Label" name="label4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Search For"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jLabel1"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
