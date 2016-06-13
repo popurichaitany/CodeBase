@@ -1,11 +1,8 @@
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-
 package JSONparser;
 
 import DbManip.JDBCconn;
@@ -25,26 +22,20 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Scanner;
-//import java.sql.*;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.simple.JSONArray;
-
 /**
  *
- * @author prath
+ * @author anand
  */
-
 public class BusinessObjparser {
-    
-    static String FileName="C:\\Users\\prath\\Downloads\\PRATHAMESH_HW2\\PRATHAMESH_HW2\\YelpDataset\\YelpDataset-CptS451\\yelp_business.json";
+    static String FileName="C:\\Users\\anand\\Downloads\\YelpDataset\\YelpDataset-CptS451\\yelp_business.json";
     static Map<String,Set<String>> categoMap;
     static JDBCconn jdbc = new JDBCconn();
-    
-    
 public static synchronized List<BusinessObject> ReadJSON(String Encoding) throws FileNotFoundException, ParseException {
     Scanner scn=new Scanner(new File(FileName),Encoding);
     ArrayList<JSONObject> json=new ArrayList<>();
