@@ -22,7 +22,7 @@ import java.util.Scanner;
 import java.util.List;
 /**
  *
- * @author prath
+ * @author anand
  */
 public class reviewsobjparser {
    
