@@ -7,7 +7,7 @@ package Model;
 
 /**
  *
- * @author prath
+ * @author anand
  */
 public class BusinessHours {
     private String BusinessID;
